@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 public class Complex_number {
     private double real, imaginary;
@@ -46,32 +45,20 @@ public class Complex_number {
         return new Complex_number(real+other.real, imaginary+other.imaginary);
     }
 
-    public Complex_number add(int n) {
-        return new Complex_number(real+n, imaginary);
-    }
-
     public Complex_number add(double n) {
         return new Complex_number(real+n, imaginary);
     }
 
-    public Complex_number substract(Complex_number other) {
+    public Complex_number subtract(Complex_number other) {
         return new Complex_number(real-other.real, imaginary-other.imaginary);
     }
 
-    public Complex_number substract(int n) {
-        return new Complex_number(real-n, imaginary);
-    }
-
-    public Complex_number substract(double n) {
+    public Complex_number subtract(double n) {
         return new Complex_number(real-n, imaginary);
     }
 
     public Complex_number multiply(Complex_number other) {
         return new Complex_number(real*other.real-imaginary*other.imaginary, real*other.imaginary+imaginary*other.real);
-    }
-
-    public Complex_number multiply(int n) {
-        return new Complex_number(real*n, imaginary*n);
     }
 
     public Complex_number multiply(double n) {
@@ -90,7 +77,7 @@ public class Complex_number {
             }
 
             else {
-                System.out.printf("%.2f", real);
+                System.out.printf("%.1f", real);
             }
         }
 
@@ -117,7 +104,7 @@ public class Complex_number {
         }
 
         else {
-            System.out.printf("%.2fi ", Math.abs(imaginary));
+            System.out.printf("%.1fi ", Math.abs(imaginary));
         }
     }
 }
