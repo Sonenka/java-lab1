@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 public class Matrix {
-    private int rows, cols;
+    private final int rows, cols;
     private Complex_number[][] data;
 
     public Matrix() {
