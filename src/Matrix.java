@@ -176,7 +176,7 @@ public class Matrix {
         return res;
     }
 
-    public Matrix getMinor(Matrix matrix, int del_col) {
+    private Matrix getMinor(Matrix matrix, int del_col) {
         Matrix res = new Matrix(matrix.rows - 1, matrix.cols - 1);
         int c = 0;
 
