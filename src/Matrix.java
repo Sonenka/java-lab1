@@ -137,7 +137,7 @@ public class Matrix {
     }
 
     public Matrix multiply(Matrix other) {
-        if (cols != rows) {
+        if (cols != other.rows) {
             throw new IllegalArgumentException("Size mismatch for multiplication.");
         }
 
