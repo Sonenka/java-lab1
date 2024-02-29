@@ -189,7 +189,7 @@ public class Matrix {
                 if (j == del_col) {
                     continue;
                 }
-                res.data[(c / (matrix.cols - 1))][(c % (matrix.cols - 1))] = matrix.data[i][j];
+                res.data[c / res.cols][c % res.cols] = matrix.data[i][j];
                 c++;
             }
         }

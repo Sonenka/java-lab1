@@ -81,27 +81,5 @@ public class Main {
 
         test_complex_number();
         test_matrix();
-
-
-/*
-        Complex_number n1 = new Complex_number(1, 2);
-        Complex_number n2 = new Complex_number(3, -4.5);
-
-        double r = n1.getImaginary();
-        System.out.println(r);
-        int x = 2;
-        Complex_number c = n1.multiply(x);
-        System.out.println(c.getReal());
-        System.out.println(c.getImaginary());
-
-        c.printComplex();*/
-
-
-/*
-        Matrix mat = new Matrix(3, 3);
-        mat.inputMatrix();
-        mat.printMatrix();
-*/
-
     }
 }
